@@ -12,7 +12,7 @@
   <locale>JA</locale>
   <start>クルーズチェイサー:コードネーム「ブラスティー」！ 階差閉宇宙ヲ、脅カス敵ヲ発見……撃滅スル！</start>
   <!--<entry>PHASE1 LIQUID</entry>-->
-  <entry>P3 JUDGEMENT</entry>
+  <entry>PHASE1 LIQUID</entry>
 
   <default target-element="Activity" target-attr="notice-d" value="Both" />
   <default target-element="Activity" target-attr="notice-o" value="-3" />
