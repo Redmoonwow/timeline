@@ -10,8 +10,7 @@
   <license>CC BY-SA</license>
   <zone>887</zone>
   <locale>JA</locale>
-  <start>クルーズチェイサー:コードネーム「ブラスティー」！ 階差閉宇宙ヲ、脅カス敵ヲ発見……撃滅スル！</start>
-  <!--<entry>PHASE1 LIQUID</entry>-->
+  <start>0039:戦闘開始！</start>
   <entry>PHASE1 LIQUID</entry>
 
   <default target-element="Activity" target-attr="notice-d" value="Both" />
