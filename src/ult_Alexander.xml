@@ -12,7 +12,7 @@
   <locale>JA</locale>
   <start>クルーズチェイサー:コードネーム「ブラスティー」！ 階差閉宇宙ヲ、脅カス敵ヲ発見……撃滅スル！</start>
   <!--<entry>PHASE1 LIQUID</entry>-->
-  <entry>P2 CHAISER</entry>
+  <entry>P3 JUDGEMENT</entry>
 
   <default target-element="Activity" target-attr="notice-d" value="Both" />
   <default target-element="Activity" target-attr="notice-o" value="-3" />
@@ -114,28 +114,28 @@
     </t>
     
       <!--次のキューを分岐させる　トリガーにヒットしたサブルーチンをキューにプッシュしてロードする-->
-    <t text="1番 ソード" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:004F:" >
+    <t text="1番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:004F:" >
       <load target="SUB1" />
     </t>
-    <t text="2番 チャージ" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0050:" >
+    <t text="2番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0050:" >
       <load target="SUB2" />
     </t>
-    <t text="3番 ソード" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0051:" >
+    <t text="3番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0051:" >
       <load target="SUB3" />
     </t>
-    <t text="4番 チャージ" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0052:" >
+    <t text="4番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0052:" >
       <load target="SUB4" />
     </t>
-    <t text="5番 ソード" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0053:" >
+    <t text="5番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0053:" >
       <load target="SUB5" />
     </t>
-    <t text="6番 チャージ" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0054:" >
+    <t text="6番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0054:" >
       <load target="SUB6" />
     </t>
-    <t text="7番 ソード" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0055:" >
+    <t text="7番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0055:" >
       <load target="SUB7" />
     </t>
-    <t text="8番 チャージ" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0056:" >
+    <t text="8番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0056:" >
       <load target="SUB8" />
     </t>
 
@@ -198,18 +198,46 @@
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
     <!--サイコロ番数確認-->
-    <t text="→↑１番 ソード" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:004F:" notice="ひとばん、ソード">
+    
+     <!--1 potision-->
+    <t text="8個目 扇避けて前に" sync="^1B:[id8]:[mex]:0000:[id4]:004F:">
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ1.png" 
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
+    </t>
+    <t text="3個目 前列で受ける" sync="^1B:[id8]:[mex]:0000:[id4]:004F:">
+    <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ1.png" 
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
+    </t>
+    <t text="→↑１番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:004F:" notice="ひとばん、ソード">
       <v-notice
         duration="30"
         duration-visible="false"
         icon="サイコロ1.png"
-        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
-      <expression>
-        <set name ="first_potision"   value = "true" />
-      </expression>
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
     </t>
 
-    <t text="→↑２番 チャージ" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0050:" notice="ふたばん、チャージ">
+     <!--2 potision-->
+    <t text="8個目 扇避けて前に" sync="^1B:[id8]:[mex]:0000:[id4]:0050:">
+        <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ2.png" 
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
+    </t>
+    <t text="3個目 後列で受ける" sync="^1B:[id8]:[mex]:0000:[id4]:0050:">
+        <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ2.png" 
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
+    </t>
+    <t text="→↑２番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0050:" notice="ふたばん、チャージ">
       <v-notice
         duration="30"
         duration-visible="false"
@@ -220,7 +248,22 @@
       </expression>
     </t>
 
-    <t text="←↓３番 ソード" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0051:" notice="さんばん、ソード">
+    <!--3 potision-->
+    <t text="9個目 扇避けて前に" sync="^1B:[id8]:[mex]:0000:[id4]:0051:">
+        <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ2.png" 
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
+    </t>
+    <t text="4個目 前列で受ける" sync="^1B:[id8]:[mex]:0000:[id4]:0051:">
+        <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ2.png" 
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
+    </t>    
+    <t text="←↓３番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0051:" notice="さんばん、ソード">
       <v-notice
         duration="30"
         duration-visible="false"
@@ -231,6 +274,21 @@
       </expression>
     </t>
 
+    <!--4 potision-->
+    <t text="9個目 扇避けて前に" sync="^1B:[id8]:[mex]:0000:[id4]:0052:">
+        <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ4.png" 
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
+    </t>
+    <t text="4個目 後列で受ける 受けたら前！" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0052:">
+        <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ4.png" 
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
+    </t>        
     <t text="←↓４番 チャージ" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0052:" notice="よんばん、チャージ">
       <v-notice
         duration="30"
@@ -241,8 +299,23 @@
         <set name ="second_potision"   value = "true" />
       </expression>
     </t>
-
-    <t text="→↑５番 ソード" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0053:" notice="ごーばん、ソード">
+    
+    <!--5 potision-->
+    <t text="8個目 前列で受ける" sync="^1B:[id8]:[mex]:0000:[id4]:0053:">
+        <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ5.png" 
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
+    </t>            
+    <t text="3個目 扇避けて前に" sync="^1B:[id8]:[mex]:0000:[id4]:0053:">
+        <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ5.png" 
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
+    </t>
+    <t text="→↑５番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0053:" notice="ごーばん、ソード">
       <v-notice
         duration="30"
         duration-visible="false"
@@ -253,7 +326,22 @@
       </expression>
     </t>
 
-    <t text="→↑６番 チャージ" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0054:" notice="ろくばん、チャージ">
+ <!--6 potision-->
+    <t text="8個目 後列で受ける" sync="^1B:[id8]:[mex]:0000:[id4]:0054:">
+        <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ6.png" 
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
+    </t>            
+    <t text="3個目 扇避けて前に" sync="^1B:[id8]:[mex]:0000:[id4]:0054:">
+        <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ6.png" 
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
+    </t>
+    <t text="→↑６番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0054:" notice="ろくばん、チャージ">
       <v-notice
         duration="30"
         duration-visible="false"
@@ -263,23 +351,20 @@
         <set name ="second_potision"   value = "true" />
       </expression>
     </t>
-
- <!--7 potision-->
-     <t text="9個目 前列で受ける" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0055:">
+ <!--7 potision-->    
+     <t text="9個目 前列で受ける" sync="^1B:[id8]:[mex]:0000:[id4]:0055:">
       <v-notice
         duration="30"
         duration-visible="false"
-        icon="サイコロ7.png"
-        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+        icon="サイコロ7.png"/>
     </t>
-    <t text="4個目 扇避けて前に" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0055:">
+    <t text="4個目 扇避けて前に" sync="^1B:[id8]:[mex]:0000:[id4]:0055:">
       <v-notice
         duration="30"
         duration-visible="false"
-        icon="サイコロ7.png"
-        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+        icon="サイコロ7.png"/>
     </t>
-    <t text="←↓７番 ソード" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0055:" notice="ななばん、ソード">
+    <t text="←↓７番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0055:" notice="ななばん、ソード">
       <v-notice
         duration="30"
         duration-visible="false"
@@ -288,7 +373,21 @@
     </t>
 
 <!--8 potiision-->
-    <t text="←↓８番 チャージ" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0056:" notice="はちばん、チャージ">
+    <t text="9個目 後列で受ける" sync="^1B:[id8]:[mex]:0000:[id4]:0056:">
+        <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ8.png" 
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
+    </t>            
+    <t text="4個目 扇避けて前に" sync="^1B:[id8]:[mex]:0000:[id4]:0056:">
+        <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ8.png" 
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
+    </t>
+    <t text="←↓８番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0056:" notice="はちばん、チャージ">
       <v-notice
         duration="30"
         duration-visible="false"
@@ -298,96 +397,6 @@
         <set name ="second_potision"   value = "true" />
       </expression>
     </t>
-
-    <!--
-    <t text="→↑１番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:004F:" notice="ひとばん、ソード">
-      <v-notice 
-        duration="30" 
-        duration-visible="false"
-        icon="Flag.png"
-        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
-      <expression>
-        <set name ="first_potision"   value = "true" />
-      </expression>
-    </t>
-
-    <t text="→↑２番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0050:" notice="ふたばん、チャージ">
-      <v-notice 
-        duration="30" 
-        duration-visible="false"
-        icon="Flag.png"
-        sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
-    <expression>
-        <set name ="second_potision"   value = "true" />
-      </expression>
-    </t>
-
-    <t text="←↓３番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0051:" notice="さんばん、ソード">
-      <v-notice 
-        duration="30" 
-        duration-visible="false"
-        icon="Flag.png"
-        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
-        <expression>
-        <set name ="third_potision"   value = "true" />
-      </expression>
-    </t>
-
-    <t text="←↓４番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0052:" notice="よんばん、チャージ">
-      <v-notice 
-        duration="30" 
-        duration-visible="false"
-        icon="Flag.png"
-        sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
-        <expression>
-        <set name ="fourth_potision"   value = "true" />
-      </expression>
-    </t>
-
-    <t text="→↑５番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0053:" notice="ごーばん、ソード">
-      <v-notice 
-        duration="30" 
-        duration-visible="false"
-        icon="Flag.png"
-        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
-        <expression>
-        <set name ="fifth_potision"   value = "true" />
-      </expression>
-    </t>
-
-    <t text="→↑６番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0054:" notice="ろくばん、チャージ">
-      <v-notice 
-        duration="30" 
-        duration-visible="false"
-        icon="Flag.png"
-        sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
-        <expression>
-        <set name ="sixth_potision"   value = "true" />
-      </expression>
-    </t>
-
-    <t text="←↓７番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0055:" notice="ななばん、ソード">
-      <v-notice 
-        duration="30" 
-        duration-visible="false"
-        icon="Flag.png"
-        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
-        <expression>
-        <set name ="seventh_potision"   value = "true" />
-      </expression>
-    </t>
-
-    <t text="←↓８番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0056:" notice="はちばん、チャージ">
-      <v-notice 
-        duration="30" 
-        duration-visible="false"
-        icon="Flag.png"
-        sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
-        <expression>
-        <set name ="eighth_potision"   value = "true" />
-      </expression>
-    </t>
-      -->
 
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
@@ -410,7 +419,7 @@
     </t>
     
     <a time="1"  text="ホークブラスター1" sync="15:[id8]:クルーズチェイサー:4830:ホークブラスター:[id8]:" notice="いち" sync-s="-3" notice-o ="0"/>
-    <a time="3"  text="ホークブラスター2" notice="にー 次止まります！ 横から前に出ます！" notice-o ="0"/>
+    <a time="3"  text="ホークブラスター2" notice="にー 次止まります！" notice-o ="0"/>
     <a time="5"  text="↓奇数！前で受ける！"/>
     <a time="5"  text="ホークブラスター3 前！" notice="さん" notice-o ="0" icon="サイコロ1.png" />
     <a time="5"  text="自分！アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
@@ -418,9 +427,9 @@
     <a time="6"  text="ホークブラスター4" notice="よん" notice-o ="0"/>
     <a time="10" text="ホークブラスター5" notice="ごー" notice-o ="0"/>
     <a time="11" text="ホークブラスター6" notice="ろく" notice-o ="0"/>
-    <a time="14" text="ホークブラスター7" notice="なな" notice-o ="0"/>
+    <a time="14" text="ホークブラスター7" notice="なな  次止まります！" notice-o ="0"/>
     <a time="16" text="↓扇がおわったら前に出る！"/>
-    <a time="16" text="ホークブラスター8" notice="はち　止まります！" notice-o ="0"/>
+    <a time="16" text="ホークブラスター8" notice="はち" notice-o ="0"/>
     <a time="17" text="アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
     <a time="18" text="チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
     <a time="18" text="ホークブラスター9" notice="きゅう" notice-o ="0" icon="Arrow1.png"/>
@@ -601,13 +610,15 @@
     <a time="21" text="アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
     <a time="22" text="自分！チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
   </s>
-      
+    
+<!--チェイサーフェーズ end************************************************************************************************************************/-->
+  
 <!--/****************************************************************************************************************************************
      * 2体フェーズ start
      ****************************************************************************************************************************************/-->
 
 <!--global-->
-  
+
       
     <s name="P3 JUDGEMENT">
 
@@ -776,6 +787,76 @@
     <a time="34" text="ビームチャクラム" sync="15:[id8]:スチームチャクラム:4855:ビームチャクラム:[id8]:" icon="AOEHorizontal.png" notice="チャクラム。" />
 
     <a time="41" text="フォトン" sync="クルーズチェイサーの「フォトン」" icon="ForceHP1.png" notice="フォトン。" />
+  @{
+    //自分のジョブからペアと最初のつけるジョブを紐づける
+    
+      string myjob   = "NULL";
+      string pairjob = "NULL";
+      string first   = "NULL";
+      
+      
+    if(true == Model.Player.InRole("DRK"))
+    {
+      myjob   = "暗黒";
+      pairjob = "忍者";
+      first   = "召喚";
+    }
+    
+    if(true == Model.Player.InRole("PLD"))
+    {
+      myjob   = "ナイト";
+      pairjob = "竜騎士";
+      first   = "召喚";
+    }
+    
+    if(true == Model.Player.InRole("WHM"))
+    {
+      myjob   = "白魔";
+      pairjob = "詩人";
+      first   = "忍者";
+    }
+    
+    if(true == Model.Player.InRole("SCH"))
+    {
+      myjob   = "学者";
+      pairjob = "召喚";
+      first   = "竜騎士";
+    }
+    
+    if(true == Model.Player.InRole("DRG"))
+    {
+      myjob   = "竜騎士";
+      pairjob = "ナイト";
+      first   = "学者";
+    }
+    
+    if(true == Model.Player.InRole("NIN"))
+    {
+      myjob   = "忍者";
+      pairjob = "暗黒";
+      first   = "白魔";
+    }
+    
+    if(true == Model.Player.InRole("BRD"))
+    {
+      myjob   = "詩人";
+      pairjob = "白魔";
+      first   = "ナイト";
+    }
+    
+    if(true == Model.Player.InRole("SMN"))
+    {
+      myjob   = "召喚";
+      pairjob = "学者";
+      first   = "暗黒";
+    }
+    
+    //書き込み用のバッファを作成し表示する文字列を生成
+      string writebuf = myjob + "→";
+      writebuf        = writebuf + first;
+    
+  }
+    <a time="45" text="@writebuf" />
     <a time="52" text="スピンクラッシャー" sync="クルーズチェイサーは「スピンクラッシャー」の構え。" notice="スピンクラッシャー。" />
 
     <a time="56" text="水・雷着弾" notice="もうすぐ爆発。" icon="Explosion.png" notice-o="-6" />
@@ -784,12 +865,22 @@
     <a time="68" text="アースミサイル" icon="AOE.png" notice="" />
     <a time="72" text="カウント" sync="ブルートジャスティスの「カウント」" notice="カウント。" />
     <a time="72" text="アイスミサイル" icon="Ice.png" notice="" />
-
+    <a time="85" text="@myjob" />
     <a time="86" text="水・雷着弾" notice="もうすぐ爆発。" icon="Explosion.png" notice-o="-6" />
     <a time="88" text="最後の審判：開廷" sync="ブルートジャスティスの「最後の審判：開廷」" notice="" />
 
     <a time="93" text="リミッターカット" sync="クルーズチェイサーの「リミッターカット」" notice="" />
     <a time="95" text="大火炎放射" sync="ブルートジャスティスの「大火炎放射」" notice="火炎放射。" />
+  <!--{
+    //自分のジョブからペアと最初のつけるジョブを紐づける
+    
+    //書き込み用のバッファを作成し表示する文字列を生成
+      writebuf = "NULL"
+      writebuf = myjob + "→";
+      writebuf = writebuf + pairjob;
+    
+  }-->
+    <a time="105" text="@writebuf" />
     <a time="107" text="竜巻" sync="クルーズチェイサーの「竜巻」" icon="Twister.png" notice="竜巻。" />
     <a time="116" text="水・雷着弾" notice="もうすぐ爆発。" icon="Explosion.png" notice-o="-6" />
 
