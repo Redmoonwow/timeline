@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<timeline>
+  <name>絶アレキサンダー討滅戦</name>
+  @{ var rev = "rev2"; }
+  <rev>@rev</rev>
+  <description>
+    UltimateRINGS専用の絶アレキタイムラインです。
+  </description>
+  <author>anoyetta</author>
+  <license>CC BY-SA</license>
+  <zone>887</zone>
+  <locale>JA</locale>
+  <start>クルーズチェイサー:コードネーム「ブラスティー」！ 階差閉宇宙ヲ、脅カス敵ヲ発見……撃滅スル！</start>
+  <!--<entry>PHASE1 LIQUID</entry>-->
+  <entry>P2 CHAISER</entry>
+
+  <default target-element="Activity" target-attr="notice-d" value="Both" />
+  <default target-element="Activity" target-attr="notice-o" value="-3" />
+  <default target-element="Activity" target-attr="sync-s" value="-5" />
+  <default target-element="Activity" target-attr="sync-e" value="4" />
+
+<!--/****************************************************************************************************************************************
+     *リキッドフェーズ start
+     ****************************************************************************************************************************************/-->
+
+<!--global-->
+  
+<s name="PHASE1 LIQUID">
+　  <t text="チェイサーフェーズへ" sync="クルーズチェイサー:コードネーム「ブラスティー」！ 階差閉宇宙ヲ、脅カス敵ヲ発見……撃滅スル！" >
+  　　<load target="P2 CHAISER" truncate="true" />
+    </t>
+
+    
+<!--**************************************************************************************************************************************-->
+    
+<!--Trigger-->
+    <!--エンボラス-->
+    <t text="エンボラス" sync="Added new combatant エンボラス" notice="エンボラス">
+      <v-notice 
+        duration="5" 
+        duration-visible="false"
+        icon="Bomb.png"
+        order="-1" />
+    </t>
+
+    <!--ヤークト出現-->
+    <t text="ヤークト" sync="Added new combatant ヤークトドール" notice="ヤークト">
+      <v-notice 
+        duration="5" 
+        duration-visible="false"
+        icon="Leave.png"
+        order="-1" />
+    </t>
+
+    <!-- 光性爆雷 -->
+    <t name="光性爆雷" text="光性爆雷" sync="[mex]に「光性爆雷」の効果。" notice="こうせい爆雷。">
+      <v-notice 
+        duration="4" 
+        job-icon="true" />
+    </t>
+
+    <!-- 窒息 -->
+    <t name="窒息" text="窒息" sync="[pc]に「窒息」の効果。" notice="ちっそくー">
+      <v-notice 
+        duration="10" 
+        icon="Timer.png" />
+    </t>
+    
+ <!--**************************************************************************************************************************************-->
+    
+    <!--timeline-->
+
+    <a time="010" text="フルイドスイング" sync="リビングリキッドの「フルイドスイング」" notice="タンク強攻撃。" />
+    <a time="018" text="カスケード" sync="リビングリキッドは「カスケード」の構え。" icon="HardAllRangeAttack.png" notice="カスケード。" />
+    <a time="020" text="リキッドハンド出現" />
+    <a time="030" text="じゃんけん" notice="じゃんけん。" notice-o="-1" />
+    <a time="033" text="竜巻ウェイブ" sync="リキッドレイジ starts using プロティアンウェイブ on リキッドレイジ." />
+    <a time="034" text="ヤークトドール出現" />
+    <a time="038" text="タンク強攻撃" sync="リビングリキッドの「フルイドスイング」" notice="タンク強攻撃。" />
+    <a time="039" text="ハンド・オブ・ペイン" sync="リキッドハンドは「ハンド・オブ・ペイン」の構え。" notice="均等化。" />
+    <a enabled="false" time="042" text="水圧充填" sync="リキッドレイジの「水圧充填」" />
+    <a time="041" text="エンボラス出現" icon="Bomb.png" />
+    <a time="050" text="汚染蒸気" sync="ヤークトドールの「汚染蒸気」" notice="" />
+    <a time="062" text="タンク強攻撃" sync="リビングリキッドの「フルイドスイング」" notice="タンク強攻撃。" />
+    <a time="066" text="ウェイブ3回" sync="リビングリキッドは「プロティアンウェイブ」の構え。" notice="ウェーブ。" />
+    <a time="067" text="ハンド・オブ・ペイン" sync="リキッドハンドは「ハンド・オブ・ペイン」の構え。" notice="均等化。" />
+    <a time="072" text="スルース" sync="リビングリキッド starts using スルース on Unknown." notice="スルース。" />
+    <a time="081" text="スプラッシュ6回" sync="リビングリキッドの「スプラッシュ」" notice="スプラッシュ。" />
+    <a time="087" text="ドレナージ" sync="リキッドレイジの「ドレナージ」" notice="ドレナージ。" />
+    <a time="089" text="カスケード" sync="リビングリキッド starts using カスケード on リビングリキッド." icon="HardAllRangeAttack.png" notice="カスケード。" />
+    <a time="091" text="窒息" notice="窒息。" />
+    <a time="104" text="プロティアンウェイブ1" sync="リビングリキッド starts using プロティアンウェイブ on リビングリキッド." notice="ウェーブ2回。" />
+    <a time="105" text="ハンド・オブ・ペイン" sync="リキッドハンドは「ハンド・オブ・ペイン」の構え。" notice="均等化。" />
+    <a time="110" text="スルース" sync="リビングリキッド starts using スルース on Unknown." notice="スルース。" />
+    <a time="110" text="プロティアンウェイブ2" sync="リキッドレイジ starts using プロティアンウェイブ on リキッドレイジ." />
+    <a enabled="false" time="119" text="水圧充填" sync="リキッドレイジの「水圧充填」" />
+    <a time="120" text="じゃんけん" notice="じゃんけん。" notice-o="-1" />
+  　<a time="121" text="エンボラス出現" icon="Bomb.png" />
+    <a time="126" text="ハンド・オブ・ペイン" sync="リキッドハンドは「ハンド・オブ・ペイン」の構え。" notice="均等化。" />
+    <a time="127" text="スプラッシュ" sync="リビングリキッドの「スプラッシュ」" notice="スプラッシュ。" />
+    <a time="140" text="時間切れ" icon="Timeout.png" />
+  </s>
+
+  <!--/*リキッドフェーズ end ****************************************************************************************************************/-->
+  
+ <!--/****************************************************************************************************************************************
+     *チェイサーフェーズ start
+     ****************************************************************************************************************************************/-->
+
+<!--global-->
+  <s name="P2 CHAISER">
+    <t text="プライムフェーズへ" sync="ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" >
+      　　<load target="P3 JUDGEMENT" truncate="true" />
+    </t>
+    
+      <!--次のキューを分岐させる　トリガーにヒットしたサブルーチンをキューにプッシュしてロードする-->
+    <t text="1番 ソード" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:004F:" >
+      <load target="SUB1" />
+    </t>
+    <t text="2番 チャージ" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0050:" >
+      <load target="SUB2" />
+    </t>
+    <t text="3番 ソード" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0051:" >
+      <load target="SUB3" />
+    </t>
+    <t text="4番 チャージ" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0052:" >
+      <load target="SUB4" />
+    </t>
+    <t text="5番 ソード" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0053:" >
+      <load target="SUB5" />
+    </t>
+    <t text="6番 チャージ" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0054:" >
+      <load target="SUB6" />
+    </t>
+    <t text="7番 ソード" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0055:" >
+      <load target="SUB7" />
+    </t>
+    <t text="8番 チャージ" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0056:" >
+      <load target="SUB8" />
+    </t>
+
+    <!--突進注意 自分の番 注意喚起フラグ start-->
+    <t text="00:0044:クルーズチェイサー:コードネーム「ブラスティー」！ 階差閉宇宙ヲ、脅カス敵ヲ発見……撃滅スル！">
+      <expression>
+        <set name = "care"              value = "false" />
+        <set name = "ready"             value = "false" />
+      </expression>
+    </t>
+    <!--突進注意 自分の番 注意喚起フラグ end-->
+    
+    <!--自分の番 注意喚起 start-->
+    <t text="次止まります！ 後ろに立ちます！" sync="15:[id8]:クルーズチェイサー:4830:ホークブラスター:[id8]:" notice="次止まります！" sync-s="-3" notice-o ="-1">
+      <expression>[
+         <pre name="ready"           value="true" /> 
+         <pre name="second_potision" value="true" />
+       </expression>
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="2マーカー.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+    </t>
+    
+     <t text="次止まります！ 前に立ちます！" sync="15:[id8]:クルーズチェイサー:4830:ホークブラスター:[id8]:" notice="次止まります！" sync-s="-3" notice-o ="-1">
+       <expression>
+         <pre name="ready"          value="true" /> 
+         <pre name="first_potision" value="true" />
+       </expression>
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="1マーカー.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+    </t>
+    <!--自分の番 注意喚起 end-->
+    
+    <!--突進注意 注意喚起 start-->
+    
+        <t text="次止まります！ 横から前に出ます！" sync="15:[id8]:クルーズチェイサー:4830:ホークブラスター:[id8]:" notice="次止まります！" sync-s="-3" notice-o ="-1">
+      <expression>[
+         <pre name="care"           value="true" /> 
+      </expression>
+      <v-notice
+        duration="3"
+        duration-visible="false"
+        icon="偽.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+    </t>
+    
+     <!--突進注意 注意喚起フラグ end-->
+    
+    <!--ホークブラスター宣言 end-->
+
+    <!--**************************************************************************************************************************************-->
+
+    <!--trigger-->
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!--サイコロ番数確認-->
+    <t text="→↑１番 ソード" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:004F:" notice="ひとばん、ソード">
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ1.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+      <expression>
+        <set name ="first_potision"   value = "true" />
+      </expression>
+    </t>
+
+    <t text="→↑２番 チャージ" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0050:" notice="ふたばん、チャージ">
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ2.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
+      <expression>
+        <set name ="second_potision"   value = "true" />
+      </expression>
+    </t>
+
+    <t text="←↓３番 ソード" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0051:" notice="さんばん、ソード">
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ3.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:89AF:[mex]" />
+      <expression>
+        <set name ="first_potision"   value = "true" />
+      </expression>
+    </t>
+
+    <t text="←↓４番 チャージ" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0052:" notice="よんばん、チャージ">
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ4.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
+      <expression>
+        <set name ="second_potision"   value = "true" />
+      </expression>
+    </t>
+
+    <t text="→↑５番 ソード" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0053:" notice="ごーばん、ソード">
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ5.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+      <expression>
+        <set name ="first_potision"   value = "true" />
+      </expression>
+    </t>
+
+    <t text="→↑６番 チャージ" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0054:" notice="ろくばん、チャージ">
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ6.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
+      <expression>
+        <set name ="second_potision"   value = "true" />
+      </expression>
+    </t>
+
+ <!--7 potision-->
+     <t text="9個目 前列で受ける" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0055:">
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ7.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+    </t>
+    <t text="4個目 扇避けて前に" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0055:">
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ7.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+    </t>
+    <t text="←↓７番 ソード" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0055:" notice="ななばん、ソード">
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ7.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+    </t>
+
+<!--8 potiision-->
+    <t text="←↓８番 チャージ" sync="^1B:102A64FA:Redmoon Rynde:0000:89AF:0056:" notice="はちばん、チャージ">
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ8.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
+      <expression>
+        <set name ="second_potision"   value = "true" />
+      </expression>
+    </t>
+
+    <!--
+    <t text="→↑１番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:004F:" notice="ひとばん、ソード">
+      <v-notice 
+        duration="30" 
+        duration-visible="false"
+        icon="Flag.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+      <expression>
+        <set name ="first_potision"   value = "true" />
+      </expression>
+    </t>
+
+    <t text="→↑２番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0050:" notice="ふたばん、チャージ">
+      <v-notice 
+        duration="30" 
+        duration-visible="false"
+        icon="Flag.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
+    <expression>
+        <set name ="second_potision"   value = "true" />
+      </expression>
+    </t>
+
+    <t text="←↓３番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0051:" notice="さんばん、ソード">
+      <v-notice 
+        duration="30" 
+        duration-visible="false"
+        icon="Flag.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+        <expression>
+        <set name ="third_potision"   value = "true" />
+      </expression>
+    </t>
+
+    <t text="←↓４番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0052:" notice="よんばん、チャージ">
+      <v-notice 
+        duration="30" 
+        duration-visible="false"
+        icon="Flag.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
+        <expression>
+        <set name ="fourth_potision"   value = "true" />
+      </expression>
+    </t>
+
+    <t text="→↑５番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0053:" notice="ごーばん、ソード">
+      <v-notice 
+        duration="30" 
+        duration-visible="false"
+        icon="Flag.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+        <expression>
+        <set name ="fifth_potision"   value = "true" />
+      </expression>
+    </t>
+
+    <t text="→↑６番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0054:" notice="ろくばん、チャージ">
+      <v-notice 
+        duration="30" 
+        duration-visible="false"
+        icon="Flag.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
+        <expression>
+        <set name ="sixth_potision"   value = "true" />
+      </expression>
+    </t>
+
+    <t text="←↓７番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0055:" notice="ななばん、ソード">
+      <v-notice 
+        duration="30" 
+        duration-visible="false"
+        icon="Flag.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+        <expression>
+        <set name ="seventh_potision"   value = "true" />
+      </expression>
+    </t>
+
+    <t text="←↓８番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0056:" notice="はちばん、チャージ">
+      <v-notice 
+        duration="30" 
+        duration-visible="false"
+        icon="Flag.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
+        <expression>
+        <set name ="eighth_potision"   value = "true" />
+      </expression>
+    </t>
+      -->
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+    <!--**************************************************************************************************************************************-->
+
+    <!--timeline-->
+
+    <a time="0" sync="クルーズチェイサー:コードネーム「ブラスティー」！ 階差閉宇宙ヲ、脅カス敵ヲ発見……撃滅スル！" />
+    <a time="5" text="分岐待ち..." />
+    
+  </s>
+  
+<!--*SUB1****************************************************************************************************************************************/-->
+
+  <s name="SUB1">
+    <t text="2体フェーズへ" sync="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" >
+      　　<load target="P3 JUDGEMENT" truncate="true" />
+    </t>
+    
+    <a time="1"  text="ホークブラスター1" sync="15:[id8]:クルーズチェイサー:4830:ホークブラスター:[id8]:" notice="いち" sync-s="-3" notice-o ="0"/>
+    <a time="3"  text="ホークブラスター2" notice="にー 次止まります！ 横から前に出ます！" notice-o ="0"/>
+    <a time="5"  text="↓奇数！前で受ける！"/>
+    <a time="5"  text="ホークブラスター3 前！" notice="さん" notice-o ="0" icon="サイコロ1.png" />
+    <a time="5"  text="自分！アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
+    <a time="6"  text="チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
+    <a time="6"  text="ホークブラスター4" notice="よん" notice-o ="0"/>
+    <a time="10" text="ホークブラスター5" notice="ごー" notice-o ="0"/>
+    <a time="11" text="ホークブラスター6" notice="ろく" notice-o ="0"/>
+    <a time="14" text="ホークブラスター7" notice="なな" notice-o ="0"/>
+    <a time="16" text="↓扇がおわったら前に出る！"/>
+    <a time="16" text="ホークブラスター8" notice="はち　止まります！" notice-o ="0"/>
+    <a time="17" text="アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
+    <a time="18" text="チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
+    <a time="18" text="ホークブラスター9" notice="きゅう" notice-o ="0" icon="Arrow1.png"/>
+    <a time="21" text="↓終わるまで戻らない！" notice="まだもどらない！！" icon="床範囲.png" enable ="true"/>
+    <a time="21" text="ホークブラスター10" notice="じゅう" notice-o ="0"/>
+  </s>
+  
+  <!--*SUB2****************************************************************************************************************************************/-->
+    <s name="SUB2">
+    <t text="2体フェーズへ" sync="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" >
+      　　<load target="P3 JUDGEMENT" truncate="true" />
+    </t>
+    
+    <a time="1"  text="ホークブラスター1" sync="15:[id8]:クルーズチェイサー:4830:ホークブラスター:[id8]:" notice="いち" sync-s="-3" notice-o ="0"/>
+    <a time="3"  text="ホークブラスター2" notice="にー 次止まります！" notice-o ="0"/>
+    <a time="5"  text="↓偶数！後ろで受ける！"/>
+    <a time="5"  text="ホークブラスター3 後ろ！" notice="さん" notice-o ="0" icon="サイコロ2.png"/>
+    <a time="5"  text="アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
+    <a time="6"  text="自分！チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
+    <a time="6"  text="ホークブラスター4" notice="よん" notice-o ="0"/>
+    <a time="10" text="ホークブラスター5" notice="ごー" notice-o ="0"/>
+    <a time="11" text="ホークブラスター6" notice="ろく" notice-o ="0"/>
+    <a time="14" text="ホークブラスター7" notice="なな 次止まります！" notice-o ="0"/>
+    <a time="16" text="↓扇がおわったら前に出る！"/>
+    <a time="16" text="ホークブラスター8" notice="はち" notice-o ="0" icon="Arrow1.png" />
+    <a time="17" text="アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
+    <a time="18" text="チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
+    <a time="18" text="ホークブラスター9" notice="きゅう" notice-o ="0" />
+    <a time="21" text="↓終わるまで戻らない！" notice="まだもどらない！！" icon="床範囲.png" enable ="true"/>
+    <a time="21" text="ホークブラスター10" notice="じゅう" notice-o ="0"/>
+  </s>
+      
+  <!--*SUB3****************************************************************************************************************************************/-->
+    <s name="SUB3">
+    <t text="2体フェーズへ" sync="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" >
+      　　<load target="P3 JUDGEMENT" truncate="true" />
+    </t>
+    
+    <a time="1" text="ホークブラスター1" sync="15:[id8]:クルーズチェイサー:4830:ホークブラスター:[id8]:" notice="いち" sync-s="-3" notice-o ="0"/>
+    <a time="3" text="ホークブラスター2" notice="にー" notice-o ="0"/>
+    <a time="5" text="ホークブラスター3" notice="さん 次止まります！" notice-o ="0"/>
+    <a time="5" text="↓奇数！前で受ける！"/>
+    <a time="6" text="ホークブラスター4" notice="よん" notice-o ="0" icon="サイコロ1.png"/>
+    <a time="8" text="自分！アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
+    <a time="9" text="チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
+    <a time="10" text="ホークブラスター5" notice="ごー" notice-o ="0"/>
+    <a time="11" text="ホークブラスター6" notice="ろく" notice-o ="0"/>
+    <a time="14" text="ホークブラスター7" notice="なな 次止まります！" notice-o ="0"/>
+    <a time="16" text="↓扇がおわったら前に出る！"/>
+    <a time="16" text="ホークブラスター8" notice="はち" notice-o ="0"/>
+    <a time="18" text="ホークブラスター9 前！" notice="きゅう" notice-o ="0"  icon="Arrow1.png" />
+    <a time="21" text="↓終わるまで戻らない！" notice="まだもどらない！！" icon="床範囲.png" enable ="true"/>
+    <a time="21" text="ホークブラスター10" notice="じゅう" notice-o ="0"/>
+    <a time="21" text="アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
+    <a time="22" text="チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
+  </s>
+      
+  <!--*SUB4****************************************************************************************************************************************/-->
+    <s name="SUB4">
+    <t text="2体フェーズへ" sync="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" >
+      　　<load target="P3 JUDGEMENT" truncate="true" />
+    </t>
+    
+    <a time="1" text="ホークブラスター1" sync="15:[id8]:クルーズチェイサー:4830:ホークブラスター:[id8]:" notice="いち" sync-s="-3" notice-o ="0"/>
+    <a time="3" text="ホークブラスター2" notice="にー" notice-o ="0"/>
+    <a time="5" text="ホークブラスター3" notice="さん 次止まります！" notice-o ="0" icon="サイコロ2.png" />
+    <a time="6" text="↓偶数！後ろで受ける！ 扇終わったらすぐに前にでる！"/>
+    <a time="6" text="ホークブラスター4" notice="よん" notice-o ="0"/>
+    <a time="8" text="アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
+    <a time="9" text="自分！チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
+    <a time="10" text="ホークブラスター5" notice="ごー" notice-o ="0"/>
+    <a time="11" text="ホークブラスター6" notice="ろく" notice-o ="0"/>
+    <a time="14" text="ホークブラスター7" notice="なな 次止まります！" notice-o ="0"/>
+    <a time="16" text="↓扇がおわったら前に出る！"/>
+    <a time="16" text="ホークブラスター8" notice="はち" notice-o ="0" icon="Arrow1.png"/>
+    <a time="18" text="ホークブラスター9 前！" notice="きゅう" notice-o ="0"/>
+    <a time="21" text="↓終わるまで戻らない！" notice="まだもどらない！！" icon="床範囲.png" enable ="true"/>
+    <a time="21" text="ホークブラスター10" notice="じゅう" notice-o ="0"/>
+    <a time="21" text="アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
+    <a time="22" text="チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
+  </s>
+
+  <!--*SUB5****************************************************************************************************************************************/-->
+  <s name="SUB5">
+    <t text="2体フェーズへ" sync="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" >
+      　　<load target="P3 JUDGEMENT" truncate="true" />
+    </t>
+    
+    <a time="1" text="ホークブラスター1" sync="15:[id8]:クルーズチェイサー:4830:ホークブラスター:[id8]:" notice="いち" sync-s="-3" notice-o ="0"/>
+    <a time="3" text="ホークブラスター2" notice="にー 次止まります！" notice-o ="0"/>
+    <a time="5" text="↓扇がおわったら前に出る！"/>
+    <a time="5" text="ホークブラスター3" notice="さん" notice-o ="0" icon="Arrow1.png" />
+    <a time="5"  text="アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
+    <a time="6"  text="チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
+    <a time="6" text="ホークブラスター4" notice="よん" notice-o ="0"/>
+    <a time="10" text="ホークブラスター5" notice="ごー" notice-o ="0"/>
+    <a time="11" text="ホークブラスター6" notice="ろく" notice-o ="0"/>
+    <a time="14" text="ホークブラスター7" notice="なな 次止まります！" notice-o ="0"/>
+    <a time="16" text="↓奇数！前で受ける！"/>
+    <a time="16" text="ホークブラスター8" notice="はち" notice-o ="0"/>
+    <a time="17" text="自分！アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
+    <a time="18" text="チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
+    <a time="18" text="ホークブラスター9 前！" notice="きゅう" notice-o ="0" icon="サイコロ1.png"/>
+    <a time="21" text="↓終わるまで戻らない！" notice="まだもどらない！！" icon="床範囲.png" enable ="true"/>
+  </s>
+
+  <!--*SUB6****************************************************************************************************************************************/-->
+  <s name="SUB6">
+    <t text="2体フェーズへ" sync="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" >
+      　　<load target="P3 JUDGEMENT" truncate="true" />
+    </t>
+    
+    <a time="1"  text="ホークブラスター1" sync="15:[id8]:クルーズチェイサー:4830:ホークブラスター:[id8]:" notice="いち" sync-s="-3" notice-o ="0"/>
+    <a time="3"  text="ホークブラスター2" notice="にー 次止まります！" notice-o ="0"/>
+    <a time="5"  text="↓扇がおわったら前に出る！"/>
+    <a time="5"  text="ホークブラスター3" notice="さん" notice-o ="0" icon="Arrow1.png" />
+    <a time="5"  text="アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
+    <a time="6"  text="チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
+    <a time="6"  text="ホークブラスター4" notice="よん" notice-o ="0"/>
+    <a time="10" text="ホークブラスター5" notice="ごー" notice-o ="0"/>
+    <a time="11" text="ホークブラスター6" notice="ろく" notice-o ="0"/>
+    <a time="14" text="ホークブラスター7" notice="なな 次止まります！" notice-o ="0"/>
+    <a time="16" text="↓偶数！後ろで受ける！"/>
+    <a time="16" text="ホークブラスター8" notice="はち　止まります！" notice-o ="0"/>
+    <a time="17" text="アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
+    <a time="18" text="自分！チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
+    <a time="18" text="ホークブラスター9 前！" notice="きゅう" notice-o ="0" icon="サイコロ1.png"/>
+    <a time="21" text="↓終わるまで戻らない！" notice="まだもどらない！！" icon="床範囲.png" enable ="true"/>
+    <a time="21" text="ホークブラスター10" notice="じゅう" notice-o ="0"/>
+  </s>
+
+  <!--*SUB7****************************************************************************************************************************************/-->
+  <s name="SUB7">
+    <t text="2体フェーズへ" sync="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" >
+      　　<load target="P3 JUDGEMENT" truncate="true" />
+    </t>
+   
+    <a time="1" text="ホークブラスター1" sync="15:[id8]:クルーズチェイサー:4830:ホークブラスター:[id8]:" notice="いち" sync-s="-3" notice-o ="0"/>
+    <a time="3" text="ホークブラスター2" notice="にー" notice-o ="0"/>
+    <a time="5" text="ホークブラスター3" notice="さん 次止まります！" notice-o ="0" />
+    <a time="6" text="↓扇がおわったら前に出る！"/>
+    <a time="6" text="ホークブラスター4" notice="よん" notice-o ="0" icon="Arrow1.png"/>
+    <a time="8" text="アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="前に出ます！" sync-s="-3" />
+    <a time="9" text="チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
+    <a time="10" text="ホークブラスター5" notice="ごー" notice-o ="0"/>
+    <a time="11" text="ホークブラスター6" notice="ろく" notice-o ="0"/>
+    <a time="14" text="ホークブラスター7" notice="なな" notice-o ="0"/>
+    <a time="16" text="ホークブラスター8" notice="はち 次止まります！" notice-o ="0"/>
+    <a time="18" text="↓奇数！前で受ける！"/>
+    <a time="18" text="ホークブラスター9 前！" notice="きゅう" notice-o ="0" icon="サイコロ1.png"/>
+    <a time="21" text="↓終わるまで戻らない！" notice="まだもどらない！！" icon="床範囲.png" enable ="true"/>
+    <a time="21" text="ホークブラスター10" notice="じゅう" notice-o ="0"/>
+    <a time="21" text="自分！アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
+    <a time="22" text="チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
+  </s>
+  
+<!--*SUB8****************************************************************************************************************************************/-->
+  <s name="SUB8">
+    <t text="2体フェーズへ" sync="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" >
+      　　<load target="P3 JUDGEMENT" truncate="true" />
+    </t>
+    
+    <a time="1" text="ホークブラスター1" sync="15:[id8]:クルーズチェイサー:4830:ホークブラスター:[id8]:" notice="いち" sync-s="-3" notice-o ="0"/>
+    <a time="3" text="ホークブラスター2" notice="にー" notice-o ="0"/>
+    <a time="5" text="ホークブラスター3" notice="さん 次止まります！" notice-o ="0" />
+    <a time="6" text="↓扇がおわったら前に出る！"/>
+    <a time="6" text="ホークブラスター4" notice="よん" notice-o ="0" icon="Arrow1.png"/>
+    <a time="8" text="アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="前に出ます！" sync-s="-3" />
+    <a time="9" text="チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
+    <a time="10" text="ホークブラスター5" notice="ごー" notice-o ="0"/>
+    <a time="11" text="ホークブラスター6" notice="ろく" notice-o ="0"/>
+    <a time="14" text="ホークブラスター7" notice="なな" notice-o ="0"/>
+    <a time="16" text="ホークブラスター8" notice="はち 次止まります！" notice-o ="0"/>
+    <a time="18" text="↓偶数！後ろで受ける！"/>
+    <a time="18" text="ホークブラスター9 前！" notice="きゅう" notice-o ="0" icon="サイコロ1.png"/>
+    <a time="21" text="↓終わるまで戻らない！" notice="まだもどらない！！" icon="床範囲.png" enable ="true"/>
+    <a time="21" text="ホークブラスター10" notice="じゅう" notice-o ="0"/>
+    <a time="21" text="アルファソード" sync="クルーズチェイサーの「アルファソード」" icon="Targetaoe03.png" notice="" sync-s="-3" />
+    <a time="22" text="自分！チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" icon="Targetaoe02.png" notice="" sync-s="-3" />
+  </s>
+      
+<!--/****************************************************************************************************************************************
+     * 2体フェーズ start
+     ****************************************************************************************************************************************/-->
+
+<!--global-->
+  
+      
+    <s name="P3 JUDGEMENT">
+
+     <t text="2体フェーズへ" sync="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" >
+      　<expression>
+        <set name = "lightning"         value = "false" />
+        <set name = "water"             value = "false" />
+        <set name = "water_is_done"     value = "false" />
+      </expression>
+    </t>
+      
+ <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- 水・雷の識別用トリガ begin -->
+    <t text="雷DOWN" sync="1A:[id8]:[mex] gains the effect of 雷属性耐性低下［強］ from ブルートジャスティス for 31.00 Seconds." icon="Attention.png" notice="" >
+      <v-notice
+        duration="31"
+        sync-to-hide="" />
+    </t>
+
+    <t text="水DOWN" sync="1A:[id8]:[mex] gains the effect of 水属性耐性低下［強］ from ブルートジャスティス for 31.00 Seconds." icon="Attention.png" notice="" >
+      <v-notice
+        duration="31"
+        sync-to-hide="" />
+    </t>
+
+    <t text="雷属性圧縮" sync="1A:[id8]:[mex] gains the effect of 雷属性圧縮 from " notice="かみなり。" >
+      <v-notice
+        order="-1"
+        duration="29"
+        job-icon="true"
+        sync-to-hide="loses the effect of 雷属性圧縮 from" />
+    </t>
+
+    <t text="雷属性圧縮" sync="1A:[id8]:[nex] gains the effect of 雷属性圧縮 from " notice="" >
+      <v-notice
+        order="-1"
+        duration="29"
+        job-icon="true"
+        sync-to-hide="loses the effect of 雷属性圧縮 from" />
+    </t>
+
+    <t text="水属性圧縮" sync="1A:[id8]:[mex] gains the effect of 水属性圧縮 from " notice="水。" >
+      <v-notice
+        order="-1"
+        duration="29"
+        job-icon="true"
+        sync-to-hide="loses the effect of 水属性圧縮 from" />
+    </t>
+
+    <t text="水属性圧縮" sync="1A:[id8]:[nex] gains the effect of 水属性圧縮 from " notice="" >
+      <v-notice
+        order="-1"
+        duration="29"
+        job-icon="true"
+        sync-to-hide="loses the effect of 水属性圧縮 from" />
+    </t>
+    <!-- 水・雷の識別用トリガ end -->
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- カンペ：最初に付与される仮判決デバフの表示を維持するトリガ begin -->
+    <t text="1回目:α" sync="1A:[id8]:[mex] gains the effect of 最後の仮判決α from  for 36.00 Seconds." notice="" sync-count="1" >
+      <expressions>
+        <pre name="debuff_origin" value="false" />
+        <set name="debuff_origin" value="true" />
+      </expressions>
+      <v-notice
+        order="1"
+        duration="120"
+        icon="A.png" />
+    </t>
+
+    <t text="1回目:β" sync="1A:[id8]:[mex] gains the effect of 最後の仮判決β from  for 36.00 Seconds." notice="" sync-count="1" >
+      <expressions>
+        <pre name="debuff_origin" value="false" />
+        <set name="debuff_origin" value="true" />
+      </expressions>
+      <v-notice
+        order="1"
+        duration="120"
+        icon="B.png" />
+    </t>
+
+    <t text="1回目:γ" sync="1A:[id8]:[mex] gains the effect of 最後の仮判決γ from  for 36.00 Seconds." notice="" sync-count="1" >
+      <expressions>
+        <pre name="debuff_origin" value="false" />
+        <set name="debuff_origin" value="true" />
+      </expressions>
+      <v-notice
+        order="1"
+        duration="120"
+        icon="C.png" />
+    </t>
+
+    <t text="1回目:δ" sync="1A:[id8]:[mex] gains the effect of 最後の仮判決δ from  for 36.00 Seconds." notice="" sync-count="1" >
+      <expressions>
+        <pre name="debuff_origin" value="false" />
+        <set name="debuff_origin" value="true" />
+      </expressions>
+      <v-notice
+        order="1"
+        duration="120"
+        icon="D.png" />
+    </t>
+    <!-- 最初に付与される仮判決デバフの表示を維持するトリガ end -->
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+    <t name="水耐性ダウン" text="水ダウン" sync="[mex]に「水属性耐性低下［強］」の効果。" notice="水ダウン">
+      <v-notice
+        duration="31"
+        job-icon="true" />
+    </t>
+
+    <t name="雷耐性ダウン" text="雷ダウン" sync="[mex]に「雷属性耐性低下［強］」の効果。" notice="雷ダウン">
+      <v-notice
+        duration="31"
+        job-icon="true" />
+    </t>
+
+    <t name="水属性圧縮" text="水圧縮" sync="[mex]に「水属性圧縮」の効果。" notice="みず圧縮">
+      <v-notice
+        duration="29"
+        job-icon="true"
+        sync-to-hide="loses the effect of 水属性圧縮 from" />
+    </t>
+
+    <t name="雷属性圧縮" text="雷圧縮" sync="[mex]に「雷属性圧縮」の効果。" notice="かみなり圧縮">
+      <v-notice
+        duration="29"
+        job-icon="true"
+        sync-to-hide="loses the effect of 雷属性圧縮 from" />
+    </t>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- ジェイル -->
+    <t name="自分にジェイル" text="ジェイル\n ➜ ${_mex}" sync="^1B:[id8]:[mex]:0000:[id4]:0010:" notice="自分にジェイル">
+      <v-notice
+        duration="6"
+        duration-visible="false"
+        job-icon="true" />
+    </t>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+          
+          
+    <a time="4" sync="ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" >
+      <expressions>
+        <!-- カンペ用フラグ初期化 -->
+        <set name="debuff_origin" value="false" />
+      </expressions>
+    </a>
+    <a time="4" text="ジャスティスキック" sync="ブルートジャスティスの「ジャスティスキック」" notice="ジャスティスキック。" />
+    <a time="17" text="竜巻" sync="クルーズチェイサーの「竜巻」" notice="竜巻。" />
+    <a time="20" text="ジャッジメントナイサイ" sync="ブルートジャスティスの「ジャッジメントナイサイ」" notice="ナイサイ。" />
+    <a time="26" text="システムリンク" sync="ブルートジャスティスの「システムリンク」" notice="システムリンク。" />
+    <a time="28" text="チャクラム出現" sync="スチームチャクラムは「ビームチャクラム」の構え。" notice="" />
+    <a time="34" text="照準" sync="クルーズチェイサーの「照準」" notice="" />
+    <a time="34" text="ビームチャクラム" sync="15:[id8]:スチームチャクラム:4855:ビームチャクラム:[id8]:" icon="AOEHorizontal.png" notice="チャクラム。" />
+
+    <a time="41" text="フォトン" sync="クルーズチェイサーの「フォトン」" icon="ForceHP1.png" notice="フォトン。" />
+    <a time="52" text="スピンクラッシャー" sync="クルーズチェイサーは「スピンクラッシャー」の構え。" notice="スピンクラッシャー。" />
+
+    <a time="56" text="水・雷着弾" notice="もうすぐ爆発。" icon="Explosion.png" notice-o="-6" />
+    <a time="63" text="ミサイル全弾発射" sync="ブルートジャスティスの「ミサイル全弾発射」" notice="" />
+    <a time="67" text="ステルス地雷散布" sync="ブルートジャスティスの「ステルス地雷散布」" notice="地雷。" />
+    <a time="68" text="アースミサイル" icon="AOE.png" notice="" />
+    <a time="72" text="カウント" sync="ブルートジャスティスの「カウント」" notice="カウント。" />
+    <a time="72" text="アイスミサイル" icon="Ice.png" notice="" />
+
+    <a time="86" text="水・雷着弾" notice="もうすぐ爆発。" icon="Explosion.png" notice-o="-6" />
+    <a time="88" text="最後の審判：開廷" sync="ブルートジャスティスの「最後の審判：開廷」" notice="" />
+
+    <a time="93" text="リミッターカット" sync="クルーズチェイサーの「リミッターカット」" notice="" />
+    <a time="95" text="大火炎放射" sync="ブルートジャスティスの「大火炎放射」" notice="火炎放射。" />
+    <a time="107" text="竜巻" sync="クルーズチェイサーの「竜巻」" icon="Twister.png" notice="竜巻。" />
+    <a time="116" text="水・雷着弾" notice="もうすぐ爆発。" icon="Explosion.png" notice-o="-6" />
+
+    <a time="133" text="プロペラウィンド" sync="クルーズチェイサーの「プロペラウィンド」" notice="" />
+    <a time="136" text="最後の審判：結審" sync="ブルートジャスティスの「最後の審判：結審」" notice="" />
+
+    <a time="146" text="フォトン" sync="クルーズチェイサーの「フォトン」" icon="ForceHP1.png" notice="フォトン。" />
+    <a time="155" text="Wロケットパンチ" sync="ブルートジャスティスの「ダブルロケットパンチ」" notice="ロケットパンチ。" />
+    <a time="157" text="スーパージャンプ" sync="ブルートジャスティスは「スーパージャンプ」の構え。" notice="スーパージャンプ。" />
+    <a time="162" text="スーパージャンプ着弾" sync="" notice="" />
+    <a time="164" text="アポカリプティクレイ" sync="ブルートジャスティスの「アポカリプティクレイ」" notice="" />
+
+    <a time="175" text="竜巻" sync="クルーズチェイサーの「竜巻」" icon="Twister.png" notice="竜巻。" />
+    <a time="183" text="竜巻" sync="クルーズチェイサーの「竜巻」" icon="Twister.png" notice="竜巻。" />
+
+    <a time="190" text="時間切れ詠唱" sync="ブルートジャスティスは「死刑判決」の構え。" notice="もうすぐ時間切れ。" />
+    <a time="199" text="時間切れ" sync="ブルートジャスティスは「死刑判決」の構え。" icon="Timeout.png" notice="" />
+    <a time="216" text="（移行待機）" />
+  
+     <!--ジャッジメントフェーズ end *********************************************************************************************************************-->
+     </s>
+      
+</timeline>
