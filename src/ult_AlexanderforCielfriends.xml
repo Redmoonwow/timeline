@@ -80,79 +80,79 @@
         duration="10"
         icon="Timer.png" />
     </t>
-<!--
-    <t name="窒息" text="窒息" sync="1A:[id8]:[DRK] gains the effect of Throttle from  for 10.00 Seconds." notice="" order ="2">
-      <expression>
+
+    <t name="窒息" text="窒息" sync="1A:[id8]:[DRK] gains the effect of Throttle from  for 10.00 Seconds." notice="" no ="1">
+      <expressions>
         <set name  ="DRK_BREATH" value ="true" />
-      </expression>
+      </expressions>
     </t>
 
-    <t name="窒息" text="窒息" sync="1A:[id8]:[PLD] gains the effect of Throttle from  for 10.00 Seconds." notice="" order ="2">
-      <expression>
+    <t name="窒息" text="窒息" sync="1A:[id8]:[PLD] gains the effect of Throttle from  for 10.00 Seconds." notice="" no ="2">
+      <expressions>
         <set name  ="PLD_BREATH" value ="true" />
-      </expression>
+      </expressions>
     </t>
 
-    <t name="窒息" text="窒息" sync="1A:[id8]:[WHM] gains the effect of Throttle from  for 10.00 Seconds." notice="" order ="2">
-      <expression>
+    <t name="窒息" text="窒息" sync="1A:[id8]:[WHM] gains the effect of Throttle from  for 10.00 Seconds." notice="" no ="3">
+      <expressions>
         <set name  ="WHM_BREATH" value ="true" />
-      </expression>
+      </expressions>
     </t>
 
-    <t name="窒息" text="窒息" sync="1A:[id8]:[SCH] gains the effect of Throttle from  for 10.00 Seconds." notice="" order ="2">
-      <expression>
+    <t name="窒息" text="窒息" sync="1A:[id8]:[SCH] gains the effect of Throttle from  for 10.00 Seconds." notice="" no ="4">
+      <expressions>
         <set name  ="SCH_BREATH" value ="true" />
-      </expression>
+      </expressions>
     </t>
 
-    <t name="窒息" text="窒息" sync="1A:[id8]:[NIN] gains the effect of Throttle from  for 10.00 Seconds." notice="" order ="2">
-      <expression>
+    <t name="窒息" text="窒息" sync="1A:[id8]:[NIN] gains the effect of Throttle from  for 10.00 Seconds." notice="" no ="5">
+      <expressions>
         <set name  ="NIN_BREATH" value ="true" />
-      </expression>
+      </expressions>
     </t>
 
-    <t name="窒息" text="窒息" sync="1A:[id8]:[DRG] gains the effect of Throttle from  for 10.00 Seconds." notice="" order ="2">
-      <expression>
+    <t name="窒息" text="窒息" sync="1A:[id8]:[DRG] gains the effect of Throttle from  for 10.00 Seconds." notice="" no ="6">
+      <expressions>
         <set name  ="DRG_BREATH" value ="true" />
-      </expression>
+      </expressions>
     </t>
 
-    <t name="窒息" text="窒息" sync="1A:[id8]:[BRD] gains the effect of Throttle from  for 10.00 Seconds." notice="" order ="2">
-      <expression>
+    <t name="窒息" text="窒息" sync="1A:[id8]:[BRD] gains the effect of Throttle from  for 10.00 Seconds." notice="" no ="7">
+      <expressions>
         <set name  ="BRD_BREATH" value ="true" />
-      </expression>
+      </expressions>
     </t>
 
-    <t name="窒息" text="窒息" sync="1A:[id8]:[SMN] gains the effect of Throttle from  for 10.00 Seconds." notice="" order ="2">
-      <expression>
+    <t name="窒息" text="窒息" sync="1A:[id8]:[SMN] gains the effect of Throttle from  for 10.00 Seconds." notice="" no ="8">
+      <expressions>
         <set name  ="SMN_BREATH" value ="true" />
-      </expression>
+      </expressions>
     </t>
 
-    <t name="窒息" text="TH4人" sync="1A:[id8]:[pc] gains the effect of Throttle from  for 10.00 Seconds." notice="タンクヒラよにん" order ="10">
-      <expression>
+    <t name="窒息" text="TH4人" sync="1A:[id8]:[pc] gains the effect of Throttle from  for 10.00 Seconds." notice="タンクヒラよにん" no ="10">
+      <expressions>
         <pre name  ="DRK_BREATH" value ="true" />
         <pre name  ="PLD_BREATH" value ="true" />
         <pre name  ="WHM_BREATH" value ="true" />
         <pre name  ="SCH_BREATH" value ="true" />
-      </expression>
+      </expressions>
       <v-notice
         duration="10"
         icon="Timer.png" />
     </t>
 
-    <t name="窒息" text="DPS4人" sync="1A:[id8]:[pc] gains the effect of Throttle from  for 10.00 Seconds." notice="でぃーぴーえすよにん" order ="5">
-      <expression>
+    <t name="窒息" text="DPS4人" sync="1A:[id8]:[pc] gains the effect of Throttle from  for 10.00 Seconds." notice="でぃーぴーえすよにん" no ="11">
+      <expressions>
         <pre name  ="DRG_BREATH" value ="true" />
         <pre name  ="NIN_BREATH" value ="true" />
         <pre name  ="BRD_BREATH" value ="true" />
         <pre name  ="SMN_BREATH" value ="true" />
-      </expression>
+      </expressions>
       <v-notice
         duration="10"
         icon="Timer.png" />*/
     </t>
-    -->
+    
     <!--**************************************************************************************************************************************-->
 
     <!--timeline-->
@@ -175,7 +175,7 @@
     <a time="081" text="スプラッシュ6回" sync="リビングリキッドの「スプラッシュ」" notice="スプラッシュ。" />
     <a time="087" text="ドレナージ" sync="リキッドレイジの「ドレナージ」" notice="ドレナージ。" />
     <a time="087" text="ドレナージ" sync="リキッドレイジの「ドレナージ」" notice="ドレナージ。" >
-      <expression>
+      <expressions>
         <set name  ="DRK_BREATH" value ="false" />
         <set name  ="PLD_BREATH" value ="false" />
         <set name  ="WHM_BREATH" value ="false" />
@@ -184,32 +184,12 @@
         <set name  ="NIN_BREATH" value ="false" />
         <set name  ="BRD_BREATH" value ="false" />
         <set name  ="SMN_BREATH" value ="false" />
-      </expression>
+      </expressions>
     </a>
     <a time="089" text="カスケード" sync="リビングリキッド starts using カスケード on リビングリキッド." icon="HardAllRangeAttack.png" notice="カスケード。" />
-    <a time="091" text="窒息" notice="窒息。" >
-      <expression>
-        <pre name  ="DRK_BREATH" value ="true" />
-        <pre name  ="PLD_BREATH" value ="true" />
-        <pre name  ="WHM_BREATH" value ="true" />
-        <pre name  ="SCH_BREATH" value ="true" />
-      </expression>
-      <v-notice
-        duration="10"
-        icon="Timer.png" />
-    </a>
+    <a time="091" text="窒息" notice="窒息。" />
 
-    <a time="091" text="窒息" notice="窒息。" >
-      <expression>
-        <pre name  ="DRG_BREATH" value ="true" />
-        <pre name  ="NIN_BREATH" value ="true" />
-        <pre name  ="BRD_BREATH" value ="true" />
-        <pre name  ="SMN_BREATH" value ="true" />
-      </expression>
-      <v-notice
-        duration="10"
-        icon="Timer.png" />
-    </a>
+    <a time="091" text="窒息" notice="窒息。" />
     <a time="104" text="プロティアンウェイブ1" sync="リビングリキッド starts using プロティアンウェイブ on リビングリキッド." notice="ウェーブ2回。" />
     <a time="105" text="ハンド・オブ・ペイン" sync="リキッドハンドは「ハンド・オブ・ペイン」の構え。" notice="均等化。" />
     <a time="110" text="スルース" sync="リビングリキッド starts using スルース on Unknown." notice="スルース。" />
@@ -231,32 +211,59 @@
   <!--global-->
   <s name="P2 CHAISER">
     <t text="プライムフェーズへ" sync="ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" >
+      <expressions>
+        <set name="P2_done" value="false" />
+      </expressions>
       　　<load target="P3 JUDGEMENT" truncate="true" />
     </t>
 
     <!--次のキューを分岐させる　トリガーにヒットしたサブルーチンをキューにプッシュしてロードする-->
     <t text="1番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:004F:" >
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <load target="SUB1" />
     </t>
     <t text="2番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0050:" >
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <load target="SUB2" />
     </t>
     <t text="3番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0051:" >
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <load target="SUB3" />
     </t>
     <t text="4番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0052:" >
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <load target="SUB4" />
     </t>
     <t text="5番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0053:" >
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <load target="SUB5" />
     </t>
     <t text="6番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0054:" >
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <load target="SUB6" />
     </t>
     <t text="7番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0055:" >
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <load target="SUB7" />
     </t>
     <t text="8番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0056:" >
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <load target="SUB8" />
     </t>
 
@@ -325,6 +332,9 @@
 
     <!--1 potision-->
     <t text="7個目 扇避けて前に" sync="^1B:[id8]:[mex]:0000:[id4]:004F:">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
         duration="30"
         duration-visible="false"
@@ -332,6 +342,9 @@
         sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
     </t>
     <t text="3個目 前列で受ける" sync="^1B:[id8]:[mex]:0000:[id4]:004F:">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
           duration="30"
           duration-visible="false"
@@ -348,6 +361,9 @@
 
     <!--2 potision-->
     <t text="7個目 扇避けて前に" sync="^1B:[id8]:[mex]:0000:[id4]:0050:">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
       duration="30"
       duration-visible="false"
@@ -355,6 +371,9 @@
       sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
     </t>
     <t text="3個目 後列で受ける" sync="^1B:[id8]:[mex]:0000:[id4]:0050:">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
       duration="30"
       duration-visible="false"
@@ -362,6 +381,9 @@
       sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
     </t>
     <t text="→↑２番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0050:" notice="ふたばん、チャージ">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
         duration="30"
         duration-visible="false"
@@ -374,6 +396,9 @@
 
     <!--3 potision-->
     <t text="8個目 扇避けて前に" sync="^1B:[id8]:[mex]:0000:[id4]:0051:">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
       duration="30"
       duration-visible="false"
@@ -381,6 +406,9 @@
       sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
     </t>
     <t text="4個目 前列で受ける" sync="^1B:[id8]:[mex]:0000:[id4]:0051:">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
       duration="30"
       duration-visible="false"
@@ -388,6 +416,9 @@
       sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
     </t>
     <t text="←↓３番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0051:" notice="さんばん、ソード">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
         duration="30"
         duration-visible="false"
@@ -400,6 +431,9 @@
 
     <!--4 potision-->
     <t text="8個目 扇避けて前に" sync="^1B:[id8]:[mex]:0000:[id4]:0052:">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
       duration="30"
       duration-visible="false"
@@ -407,6 +441,9 @@
       sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
     </t>
     <t text="4個目 後列で受ける 受けたら前！" sync="^^1B:[id8]:[mex]:0000:[id4]:0052:">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
       duration="30"
       duration-visible="false"
@@ -414,18 +451,21 @@
       sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
     </t>
     <t text="←↓４番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0052:" notice="よんばん、チャージ">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
         duration="30"
         duration-visible="false"
         icon="サイコロ4.png"
         sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
-      <expression>
-        <set name ="second_potision"   value = "true" />
-      </expression>
     </t>
 
     <!--5 potision-->
     <t text="7個目 前列で受ける" sync="^1B:[id8]:[mex]:0000:[id4]:0053:">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
       duration="30"
       duration-visible="false"
@@ -433,6 +473,9 @@
       sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
     </t>
     <t text="3個目 扇避けて前に" sync="^1B:[id8]:[mex]:0000:[id4]:0053:">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
       duration="30"
       duration-visible="false"
@@ -445,6 +488,9 @@
         duration-visible="false"
         icon="サイコロ5.png"
         sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <expression>
         <set name ="first_potision"   value = "true" />
       </expression>
@@ -452,6 +498,9 @@
 
     <!--6 potision-->
     <t text="7個目 後列で受ける" sync="^1B:[id8]:[mex]:0000:[id4]:0054:">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
       duration="30"
       duration-visible="false"
@@ -459,6 +508,9 @@
       sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
     </t>
     <t text="3個目 扇避けて前に" sync="^1B:[id8]:[mex]:0000:[id4]:0054:">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
       duration="30"
       duration-visible="false"
@@ -466,6 +518,9 @@
       sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
     </t>
     <t text="→↑６番 チャージ" sync="^1B:[id8]:[mex]:0000:[id4]:0054:" notice="ろくばん、チャージ">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
         duration="30"
         duration-visible="false"
@@ -477,18 +532,27 @@
     </t>
     <!--7 potision-->
     <t text="8個目 前列で受ける" sync="^1B:[id8]:[mex]:0000:[id4]:0055:">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
         duration="30"
         duration-visible="false"
         icon="サイコロ7.png"/>
     </t>
     <t text="4個目 扇避けて前に" sync="^1B:[id8]:[mex]:0000:[id4]:0055:">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
         duration="30"
         duration-visible="false"
         icon="サイコロ7.png"/>
     </t>
     <t text="←↓７番 ソード" sync="^1B:[id8]:[mex]:0000:[id4]:0055:" notice="ななばん、ソード">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
         duration="30"
         duration-visible="false"
@@ -498,6 +562,9 @@
 
     <!--8 potiision-->
     <t text="8個目 後列で受ける" sync="^1B:[id8]:[mex]:0000:[id4]:0056:">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
       duration="30"
       duration-visible="false"
@@ -505,6 +572,9 @@
       sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
     </t>
     <t text="4個目 扇避けて前に" sync="^1B:[id8]:[mex]:0000:[id4]:0056:">
+      <expressions>
+        <pre name="P2_done" value="false" />
+      </expressions>
       <v-notice
       duration="30"
       duration-visible="false"
@@ -517,9 +587,7 @@
         duration-visible="false"
         icon="サイコロ8.png"
         sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
-      <expression>
-        <set name ="second_potision"   value = "true" />
-      </expression>
+
     </t>
 
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
@@ -749,12 +817,11 @@
 
     <t text="3体フェーズへ" sync="00:0044:アレキサンダー・プライム:我はアレキサンダー……機械仕掛けの神なり……。 理想郷に到る道を導くため……我が審判を受けよ……。" >
       <load target="P4 PRIME" truncate="true" />
-        
-      　<expression>
-
+      　<expressions>
         <set name = "water"             value = "false" />
         <set name = "water_is_done"     value = "false" />
-      </expression>
+        <set name ="P2_done"            value = "true" />
+      </expressions>
     </t>
 
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
@@ -827,40 +894,6 @@
 
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-
-<!--
-    <t sync="1A:[id8]:[mex] gains the effect of Final Decree Nisi Α from  for 36.00 Seconds." notice=""  >
-      <v-notice
-        order="-5"
-        duration="36.1"
-        icon="Alpha.png"
-        sync-to-hide="1E:[id8]:[mex] loses the effect of Final Decree Nisi Α from ." />
-    </t>
-
-    <t sync="1A:[id8]:[mex] gains the effect of Final Decree Nisi Β from  for 36.00 Seconds." notice=""  >
-      <v-notice
-        order="-5"
-        duration="36.1"
-        icon="Beta.png"
-        sync-to-hide="1E:[id8]:[mex] loses the effect of Final Decree Nisi Β from ." />
-    </t>
-
-    <t sync="1A:[id8]:[mex] gains the effect of Final Decree Nisi Γ from  for 36.00 Seconds." notice=""  >
-      <v-notice
-        order="-5"
-        duration="36.1"
-        icon="Gamma.png"
-        sync-to-hide="1E:[id8]:[mex] loses the effect of Final Decree Nisi Γ from ." />
-    </t>
-
-    <t sync="1A:[id8]:[mex] gains the effect of Final Decree Nisi Δ from  for 36.00 Seconds." notice=""  >
-      <v-notice
-        order="-5"
-        duration="36.1"
-        icon="Delta.png"
-        sync-to-hide="1E:[id8]:[mex] loses the effect of Final Decree Nisi Δ from ." />
-    </t>
-    -->
 
     <!-- ******************************************************************************************************************************-->
 
@@ -1010,12 +1043,12 @@
     </a>
 
     <a time="@(250 - overtimes)" text="最後の審判：開廷" sync="ブルートジャスティスの「最後の審判：開廷」" notice-o="0" notice="デバフ1、整列するー。" >
-      <expression>
+      <expressions>
         <set name="debuff_alpha_mex" value="false" />
         <set name="debuff_beta_mex" value="false" />
         <set name="debuff_ganma_mex" value="false" />
         <set name="debuff_delta_mex" value="false" />
-      </expression>
+      </expressions>
     </a>
 
     <a time="@(255 - overtimes)" text="リミッターカット" sync="クルーズチェイサーの「リミッターカット」" notice="" />
@@ -1164,18 +1197,377 @@
   <s name="P4 PRIME">
   @{ overtimes = 344 ;}
     <t text="最終フェーズへ" sync="アレキサンダー・プライム:我は機械仕掛けの神なれば、 我は我を改良し、究極へと至らん……。" >
+      <expressions>
+        <set name="debuff_on" value="false" /> 
+      </expressions>
       <load target="P5 P_ZIONG" truncate="true" />
     </t>
+
+    <!-- memo -->
+    <!--Restraining Order   接近禁止命令 -->
+    <!--House Arrest        接近強制命令 -->
+    <!--Aggravated Assault  過重罰 -->
+    <!--Defamation          名誉罰 -->
+    <!--Shared Sentence     集団罰 -->
     
-  <a time="@(344 - overtimes)" sync="アレキサンダー・プライム:我はアレキサンダー……機械仕掛けの神なり……。 理想郷に到る道を導くため……我が審判を受けよ……。" />
+    <!--Trigger-->
+
+    @if (Model.Player.InRole("TANK","HEALER"))
+    {
+    <t text="接近禁止 ジャス側外周で受ける" sync="^1A:[id8]:[mex] gains the effect of Restraining Order from  for 9999.00 Seconds." notice="ジャスティス側外周で受ける" no="1">
+      <expressions>
+        <set name="debuff_on" value="true" />
+      </expressions>
+        <v-notice
+          duration="15"
+          duration-visible="false"
+          icon="KnockBack.png"
+          order="-10" />
+      </t>
+      <t text="接近強制 ジャス目の前で受ける" sync="^1A:[id8]:[mex] gains the effect of House Arrest from  for 9999.00 Seconds." notice="チェイサー後で受ける" no="2">
+        <expressions>
+          <set name="debuff_on" value="true" />
+        </expressions>
+        <v-notice
+          duration="15"
+          duration-visible="false"
+          icon="Pull.png"
+          order="-10" />
+      </t>
+      <t text="過重罰 ジャス後ろで待つ" sync="^1A:[id8]:[mex] gains the effect of Aggravated Assault from  for 9999.00 Seconds." notice="ジャス右手側で待つ" no="3">
+        <expressions>
+          <set name="debuff_on" value="true" />
+        </expressions>
+        <v-notice
+          duration="15"
+          duration-visible="false"
+          icon="False.png"
+          order="-10" />
+      </t>
+      <t text="なし チェイサー後ろで受ける" sync="[nex] gains the effect of 確定判決：" sync-count="6" notice="ジャス後ろで受ける" no="5">
+        <expressions>
+          <pre name="debuff_on" value="false" />
+        </expressions>
+        <v-notice
+          duration="15"
+          duration-visible="false"
+          icon="Targetaoe03.png"
+          order="-10" />
+      </t>
+    }
+    else
+    {
+      <t text="接近禁止 チェイサー側外周で受ける" sync="^1A:[id8]:[mex] gains the effect of Restraining Order from  for 9999.00 Seconds." notice="チェイサー側外周で受ける" no="1">
+        <expressions>
+          <set name="debuff_on" value="true" />
+        </expressions>
+        <v-notice
+        duration="15"
+        duration-visible="false"
+        icon="KnockBack.png"
+        order="-10" />
+      </t>
+      <t text="接近強制 ジャス目の前で受ける" sync="^1A:[id8]:[mex] gains the effect of House Arrest from  for 9999.00 Seconds." notice="チェイサー前で受ける" no="2">
+        <expressions>
+          <set name="debuff_on" value="true" />
+        </expressions>
+        <v-notice
+        duration="15"
+        duration-visible="false"
+        icon="Pull.png"
+        order="-10" />
+      </t>
+      <t text="過重罰 ジャス後ろで待つ" sync="^1A:[id8]:[mex] gains the effect of Aggravated Assault from  for 9999.00 Seconds." notice="ジャス右手側で待つ" no="3">
+        <expressions>
+          <set name="debuff_on" value="true" />
+        </expressions>
+        <v-notice
+        duration="15"
+        duration-visible="false"
+        icon="False.png"
+        order="-10" />
+      </t>
+      <t text="なし チェイサー前で受ける" sync="^1A:[id8]:[nex] gains the effect of" sync-count="6" notice="ジャス前で受ける" no="5">
+        <expressions>
+          <pre name="debuff_on" value="false" />
+        </expressions>
+        <v-notice
+        duration="15"
+        duration-visible="false"
+        icon="Targetaoe03.png"
+        order="-10" />
+      </t>
+    }
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!--サイコロ番数確認 時間断絶-->
+
+    <!--1 potision-->
+    <t text="３回目の懺悔の間に入る" sync="^1B:[id8]:[mex]:0000:[id4]:004F:">
+      <expressions>
+        <pre name="temp_stop" value="false"/>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ1.png"
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
+    </t>
+    <t text="アポカリ発動後\n D or B近い方に移動" sync="^1B:[id8]:[mex]:0000:[id4]:004F:">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+          duration="30"
+          duration-visible="false"
+          icon="サイコロ1.png"
+          sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
+    </t>
+    <t text="１番 ジャスティス足元に移動" sync="^1B:[id8]:[mex]:0000:[id4]:004F:" notice="ひとばん、ソード">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ1.png"
+        sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
+
+    </t>
+
+    <!--2 potision-->
+    <t text="３回目の懺悔の間に入る" sync="^1B:[id8]:[mex]:0000:[id4]:0050:">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+      duration="30"
+      duration-visible="false"
+      icon="サイコロ2.png"
+      sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
+    </t>
+    <t text="チャージ後\n D or B近い方に移動" sync="^1B:[id8]:[mex]:0000:[id4]:0050:">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+      duration="30"
+      duration-visible="false"
+      icon="サイコロ2.png"
+      sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
+    </t>
+    <t text="２番 チェイサー足元に移動" sync="^1B:[id8]:[mex]:0000:[id4]:0050:" notice="ふたばん、チャージ">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ2.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
+    </t>
+
+    <!--3 potision-->
+    <t text="ソード後\n D or B近い方に移動" sync="^1B:[id8]:[mex]:0000:[id4]:0051:">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+      duration="30"
+      duration-visible="false"
+      icon="サイコロ2.png"
+      sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
+    </t>
+    <t text="３番 チェイサー位置後方へ" sync="^1B:[id8]:[mex]:0000:[id4]:0051:" notice="さんばん、ソード">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ3.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:89AF:[mex]" />
+    </t>
+
+    <!--4 potision-->
+    <t text="ソード、ジャンプ後\n D or B近い方に移動" sync="^^1B:[id8]:[mex]:0000:[id4]:0052:">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+      duration="30"
+      duration-visible="false"
+      icon="サイコロ4.png"
+      sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
+    </t>
+    <t text="４番 ジャス位置後方へ" sync="^1B:[id8]:[mex]:0000:[id4]:0052:" notice="よんばん、チャージ">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ4.png" />
+    </t>
+
+    <!--5 potision-->
+    <t text="ジャスティス足元に移動" sync="^1B:[id8]:[mex]:0000:[id4]:0053:">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+      duration="30"
+      duration-visible="false"
+      icon="サイコロ5.png"
+      sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
+    </t>
+    <t text="１回目の懺悔の間に入る" sync="^1B:[id8]:[mex]:0000:[id4]:0053:">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+      duration="30"
+      duration-visible="false"
+      icon="サイコロ5.png"
+      sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
+    </t>
+    <t text="５番 ジャス側に移動\n ソードの当たらない位置に" sync="^1B:[id8]:[mex]:0000:[id4]:0053:" notice="ごーばん、ソード">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ5.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+    </t>
+
+    <!--6 potision-->
+    <t text="チェイサー足元に移動" sync="^1B:[id8]:[mex]:0000:[id4]:0054:">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+      duration="30"
+      duration-visible="false"
+      icon="サイコロ6.png"
+      sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
+    </t>
+    <t text="１回目の懺悔の間に入る" sync="^1B:[id8]:[mex]:0000:[id4]:0054:">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+      duration="30"
+      duration-visible="false"
+      icon="サイコロ6.png"
+      sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
+    </t>
+    <t text="６番 チェイサー足元に移動\n チャージの当たらない位置に" sync="^1B:[id8]:[mex]:0000:[id4]:0054:" notice="ろくばん、チャージ">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ6.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
+    </t>
+    <!--7 potision-->
+    <t text="ジャスティス足元に移動" sync="^1B:[id8]:[mex]:0000:[id4]:0055:">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ7.png"/>
+    </t>
+    <t text="２回目の懺悔の間に入る" sync="^1B:[id8]:[mex]:0000:[id4]:0055:">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ7.png"/>
+    </t>
+    <t text="７番 ジャス側に移動\n ソードの当たらない位置に" sync="^1B:[id8]:[mex]:0000:[id4]:0055:" notice="ななばん、ソード">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ7.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4834:アルファソード:[id8]:[mex]" />
+    </t>
+
+    <!--8 potiision-->
+    <t text="チェイサー足元に移動" sync="^1B:[id8]:[mex]:0000:[id4]:0056:">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+      duration="30"
+      duration-visible="false"
+      icon="サイコロ8.png"
+      sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！" />
+    </t>
+    <t text="２回目の懺悔の間に入る" sync="^1B:[id8]:[mex]:0000:[id4]:0056:">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+      duration="30"
+      duration-visible="false"
+      icon="サイコロ8.png"
+      sync-to-hide="00:0044:ブルートジャスティス:コードネーム「ブルートジャスティス」！ 想定外ノ時空改変者ヲ発見……鉄槌ヲ下ス！]" />
+    </t>
+    <t text="８番 チェイサー足元に移動\n チャージの当たらない位置に" sync="^1B:[id8]:[mex]:0000:[id4]:0056:" notice="はちばん、チャージ">
+      <expressions>
+        <pre name="P2_done" value="true" />
+      </expressions>
+      <v-notice
+        duration="30"
+        duration-visible="false"
+        icon="サイコロ8.png"
+        sync-to-hide="^15:[id8]:クルーズチェイサー:4B4F:スーパーブラスティ・チャージ:[id8]:[mex]" />
+    </t>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <t text="水晶着弾" sync="^1B:[id8]:[mex]:[id4]:[id4]:0060:" notice="5count.wav" >
+      <v-notice
+        duration="5"
+        duration-visible="true"
+        icon="Bomb.png" />
+    </t>
+  
+    <!--Timeline-->
+    <a time="@(344 - overtimes)" sync="アレキサンダー・プライム:我はアレキサンダー……機械仕掛けの神なり……。 理想郷に到る道を導くため……我が審判を受けよ……。" >
+      <expressions>
+        <set name="temp_stop" value="false"/>
+        <set name="temp_stop_debuff" value="false"/>
+        <set name="TANK_CRI" value="0"/>
+        <set name="DPS_CRI" value="0"/>
+      </expressions>
+    </a>
   <a time="@(350 - overtimes)" text="時間停止" sync="アレキサンダー・プライム starts using Temporal Stasis on アレキサンダー・プライム." notice="次は、時間停止。" />
-  <a time="@(358 - overtimes)" text="時間停止発動" sync="アレキサンダー・プライムの「時間停止」" />
-  <a time="@(362 - overtimes)" text="アルファソード" sync="クルーズチェイサーの「アルファソード」" notice="次は、アルファソード。" />
-  <a time="@(363 - overtimes)" text="大火炎放射" sync="ブルートジャスティスの「大火炎放射」" />
-  <a time="@(363 - overtimes)" text="アルファソード" sync="クルーズチェイサーの「アルファソード」" notice="次は、アルファソード。" />
-  <a time="@(364 - overtimes)" text="アルファソード" sync="クルーズチェイサーの「アルファソード」" notice="次は、アルファソード。" />
-  <a time="@(365 - overtimes)" text="大火炎放射" sync="ブルートジャスティスの「大火炎放射」" />
-  <a time="@(373 - overtimes)" text="神罰の熱線 3連続" sync="アレキサンダー・プライムは「神罰の熱線」の構え。" notice="次は、神罰の熱線。" /> 
+  <a time="@(358 - overtimes)" text="時間停止発動" sync="アレキサンダー・プライムの「時間停止」" notice-o="0" />
+  <a time="@(362 - overtimes)" text="アルファソード1" sync="クルーズチェイサーの「アルファソード」" notice="次は、アルファソード。" />
+  <a time="@(363 - overtimes)" text="大火炎放射1" sync="ブルートジャスティスの「大火炎放射」" />
+  <a time="@(363 - overtimes)" text="アルファソード2" sync="クルーズチェイサーの「アルファソード」" notice="次は、アルファソード。" />
+  <a time="@(364 - overtimes)" text="アルファソード3" sync="クルーズチェイサーの「アルファソード」" notice="次は、アルファソード。" />
+  <a time="@(365 - overtimes)" text="大火炎放射2" sync="ブルートジャスティスの「大火炎放射」" />
+    <a time="@(373 - overtimes)" text="神罰の熱線 3連続" sync="アレキサンダー・プライムは「神罰の熱線」の構え。" notice="次は、神罰の熱線。" >
+      <exression>
+        <set name="temp_stop" value="true"/>
+        <set name="temp_stop_debuff" value="true"/>
+      </exression>
+    </a> 
   <!--TANK CARE-->
   <!--<a time="(379 - overtimes)" text="神罰の熱線" sync="アレキサンダー・プライムの「神罰の熱線」" />-->
   <a time="@(382 - overtimes)" text="聖なる炎" sync="アレキサンダー・プライムの「聖なる炎」" notice="次は、聖なる炎。" />
@@ -1184,7 +1576,6 @@
   
   <a time="@(391 - overtimes)" text="時空潜行のマーチ" sync="アレキサンダー・プライムは「時空潜行のマーチ」の構え。" notice="次は、時空潜行のマーチ。" />
   <a time="@(406 - overtimes)" text="審判の結晶" sync="アレキサンダー・プライムは「審判の結晶」の構え。" notice="次は、審判の結晶。" />
-  <a time="@(407 - overtimes)" text="Judgment Crystal" sync="アレキサンダー・プライム starts using Judgment Crystal on アレキサンダー・プライム." notice="次は、Judgment Crystal。" />
   <a time="@(415 - overtimes)" text="爆雷起爆" sync="プラズマスフィアの「爆雷起爆」" notice="次は、爆雷起爆。" />
   <a time="@(421 - overtimes)" text="シャノア:ニャーン♪" sync="シャノア:ニャーン♪" />
   <a time="@(421 - overtimes)" text="結晶破裂" sync="審判の結晶の「結晶破裂」" notice="次は、結晶破裂。" />
@@ -1192,7 +1583,6 @@
   <a time="@(429 - overtimes)" text="大火炎放射2" />
   <a time="@(431 - overtimes)" text="大火炎放射3" />
   <a time="@(433 - overtimes)" text="時空潜行" sync="アレキサンダー・プライムは「時空潜行」の構え。" notice="次は、時空潜行。" />
-  <a time="@(434 - overtimes)" text="Inception" sync="アレキサンダー・プライム starts using Inception on アレキサンダー・プライム." notice="次は、Inception。" />
   <a time="@(438 - overtimes)" text="時空潜行" sync="アレキサンダー・プライムの「時空潜行」" />
   <a time="@(447 - overtimes)" text="十字の秘蹟" sync="アレキサンダー・プライムの「十字の秘蹟」" />
   <a time="@(451 - overtimes)" text="スーパージャンプ" sync="ブルートジャスティスは「スーパージャンプ」の構え。" notice="次は、スーパージャンプ。" />
@@ -1202,7 +1592,6 @@
 
   
   <a time="@(482 - overtimes)" text="次元断絶のマーチ" sync="アレキサンダー・プライムは「次元断絶のマーチ」の構え。" notice="次は、次元断絶のマーチ。" />
-  <a time="@(493 - overtimes)" text="Limit Cut" sync="クルーズチェイサー starts using Limit Cut on クルーズチェイサー." notice="次は、Limit Cut。" />
   <a time="@(495 - overtimes)" text="システムリンク" sync="ブルートジャスティスは「システムリンク」の構え。" notice="次は、システムリンク。" />
   <a time="@(495 - overtimes)" text="リミッターカット" sync="クルーズチェイサーの「リミッターカット」" />
   <a time="@(498 - overtimes)" text="懺悔の間" sync="アレキサンダー・プライムは「懺悔の間」の構え。" notice="次は、懺悔の間。" />
@@ -1219,25 +1608,18 @@
   <a time="@(515 - overtimes)" text="十字の秘蹟" sync="アレキサンダー・プライムの「十字の秘蹟」" />
   <a time="@(520 - overtimes)" text="ミサイル全弾発射" sync="ブルートジャスティスは「ミサイル全弾発射」の構え。" notice="次は、ミサイル全弾発射。" />
   <a time="@(521 - overtimes)" text="アルファソード" sync="クルーズチェイサーの「アルファソード」" notice="次は、アルファソード。" />
-  <a time="@(521 - overtimes)" text="Missile Command" sync="ブルートジャスティス starts using Missile Command on ブルートジャスティス." notice="次は、Missile Command。" />
   <a time="@(522 - overtimes)" text="浄化の熱線" sync="アレキサンダー・プライムは「浄化の熱線」の構え。" notice="次は、浄化の熱線。" />
   <a time="@(522 - overtimes)" text="スーパーブラスティ・チャージ" sync="クルーズチェイサーの「スーパーブラスティ・チャージ」" notice="次は、スーパーブラスティ・チャージ。" />
-  <a time="@(523 - overtimes)" text="Incinerating Heat" sync="アレキサンダー・プライム starts using Incinerating Heat on Ries Eberbach." notice="次は、Incinerating Heat。" />
   <a time="@(524 - overtimes)" text="ミサイル全弾発射" sync="ブルートジャスティスの「ミサイル全弾発射」" />
   <a time="@(527 - overtimes)" text="浄化の熱線" sync="アレキサンダー・プライムの「浄化の熱線」" />
   <a time="@(536 - overtimes)" text="メガホーリー" sync="アレキサンダー・プライムは「メガホーリー」の構え。" notice="次は、メガホーリー。" />
-  <a time="@(537 - overtimes)" text="Mega Holy" sync="アレキサンダー・プライム starts using Mega Holy on アレキサンダー・プライム." notice="次は、Mega Holy。" />
   <a time="@(540 - overtimes)" text="メガホーリー" sync="アレキサンダー・プライムの「メガホーリー」" />
   <a time="@(543 - overtimes)" text="メガホーリー" sync="アレキサンダー・プライムは「メガホーリー」の構え。" notice="次は、メガホーリー。" />
-  <a time="@(544 - overtimes)" text="Mega Holy" sync="アレキサンダー・プライム starts using Mega Holy on アレキサンダー・プライム." notice="次は、Mega Holy。" />
   <a time="@(548 - overtimes)" text="メガホーリー" sync="アレキサンダー・プライムの「メガホーリー」" />
   <a time="@(553 - overtimes)" sync="アレキサンダー・プライム:聖なる審判の時来たれり……。" />
   <a time="@(553 - overtimes)" text="アレキサンダー召喚" sync="アレキサンダー・プライムは「アレキサンダー召喚」の構え。" notice="次は、アレキサンダー召喚。" />
-  <a time="@(554 - overtimes)" text="Summon Alexander" sync="アレキサンダー・プライム starts using Summon Alexander on アレキサンダー・プライム." notice="次は、Summon Alexander。" />
   <a time="@(558 - overtimes)" text="アレキサンダー召喚" sync="アレキサンダー・プライムの「アレキサンダー召喚」" />
   <a time="@(564 - overtimes)" text="聖なる審判" sync="アレキサンダー・プライムは「聖なる審判」の構え。" notice="次は、聖なる審判。" />
-  <a time="@(565 - overtimes)" text="Eternal Darkness" sync="クルーズチェイサー starts using Eternal Darkness on クルーズチェイサー." notice="次は、Eternal Darkness。" />
-  <a time="@(565 - overtimes)" text="Divine Judgment" sync="アレキサンダー・プライム starts using Divine Judgment on アレキサンダー・プライム." notice="次は、Divine Judgment。" />
   <a time="@(627 - overtimes)" text="聖なる審判" sync="アレキサンダー・プライムの「聖なる審判」" />
   <a time="@(627 - overtimes)" sync="アレキサンダー:聖なる審判マデ　10" />
   <a time="@(632 - overtimes)" sync="アレキサンダー:聖なる審判マデ　5" />
@@ -1255,11 +1637,11 @@
   <s name="P5 P_ZIONG">
     @{ overtimes = 654 ;}
     <t text="3体フェーズへ" sync="アレキサンダー・プライム:我は機械仕掛けの神なれば、 我は我を改良し、究極へと至らん……。" >
-      　<expression>
+      　<expressions>
 
         <set name = "water"             value = "false" />
         <set name = "water_is_done"     value = "false" />
-      </expression>
+      </expressions>
     </t>
 
     <a time="@(654 - overtimes)" sync="アレキサンダー・プライム:我は機械仕掛けの神なれば、 我は我を改良し、究極へと至らん……。" />
