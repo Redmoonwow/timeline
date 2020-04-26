@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<timeline>
+  <name>エデン4層</name>
+  @{ var rev = "rev1"; }
+  <rev>@rev</rev>
+  <description>
+    シエルとゆかいな仲間たち
+  </description>
+  <author>REDMOONWOW</author>
+  <license>CC BY-SA</license>
+  <zone>887</zone>
+  <locale>JA</locale>
+  <start>0039:戦闘開始！</start>
+  <entry>PHASE1</entry>
+
+  <default target-element="Activity" target-attr="notice-d" value="Both" />
+  <default target-element="Activity" target-attr="notice-o" value="-3" />
+  <default target-element="Activity" target-attr="sync-s" value="-5" />
+  <default target-element="Activity" target-attr="sync-e" value="4" />
+
+
+
+
+
+
+
+  <!--/****************************************************************************************************************************************
+     *リキッドフェーズ start
+     ****************************************************************************************************************************************/-->
+
+  <!--global-->
+
+  <s name="PHASE1">
+
+    <t name="init state" sync="0039:戦闘開始！" >
+      <expressions>
+        <set name="P1_STATE" value="1"/>
+      </expressions>
+    </t>
+  
+    <t name="南　赤鏡側" sync="シヴァは「フロストスラスト」の構え。" >
+      <expressions>
+        <set name="P1_STATE" value="2"/>
+      </expressions>
+      <v-notice
+        duration="10"
+        duration-visible="false"
+        icon="DontEscape.png" />
+    </t>
+    
+      <t name="北　黄鏡側" sync="シヴァは「フロストスラッシュ」の構え。" >
+      <expressions>
+        <set name="P1_STATE" value="2"/>
+      </expressions>
+      <v-notice
+        duration="10"
+        duration-visible="false"
+        icon="DontEscape.png" />
+    </t>
+  
+  </s>
+
+</timeline>
